@@ -129,7 +129,6 @@ margin:0 auto;
   .profilePhoto{
     float:left;
     margin:.3125em 1.5em 1em 0;
-    
 }
 
 .footer {
@@ -141,6 +140,10 @@ margin:0 auto;
     text-align:center;
     background-color:#666666; 
 
+}
+
+.copyRight{
+    margin:0;
 }
 
 .tealBar{
