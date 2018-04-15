@@ -6,65 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <!--horizontal bar covering entire body-->
-    <div class="topBar">
+    <!--main nav container-->
+    <div class="container mainnavDiv">
 
-        <!--container to keep name and buttons within 960px-->
-        <div class="containerInsideBar">
+        <!--navbar to contain name and buttons-->
+        <nav class="navbar navbar-expand-lg navbar-light navbarstyle">
             <div class="nameBar">
                 <h1 id="myName">Shan</h1>
             </div>
+            <!--buttons in nav-->
             <div class="sectionBar">
-                    <button class="aboutButton btn hvr-underline-from-center"><a href="index.html">About</a></button>
-                    <button class="portfolioButton btn hvr-underline-from-center"><a href="portfolio.html">Portfolio</a></button>
-                    <button class="contactButton btn hvr-underline-from-center"><a href="contact.html">Contact</a></button>
+                <a class="btn btn-outline-primary hvr-underline-from-center mybtn" href="index.html" role="button">About</a>
+                <a class="btn btn-outline-primary hvr-underline-from-center mybtn" href="portfolio.html" role="button">Portfolio</a>
+                <a class="btn btn-outline-primary hvr-underline-from-center mybtn1" href="contact.html" role="button">Contact</a>
             </div>
-        </div>
+        </nav>
 
     </div>
 
-    <div class="wrapperPort">
-        <h1 id="aboutMe">Portfolio</h1>
-        <hr class="hrStyle">
+    <!--main container containing about me section-->
 
-        <!--start of project-->
-        <div class="projectContainer">
-            <div class="individualProject">
-                <img src="http://via.placeholder.com/227x172" class="portfolioImg">
-                <button class="projectInfo hvr-grow-shadow">Hangman</Button>
-            </div>
+    <div class="container contentContainer">
 
-            <div class="individualProject">
-                <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
-                <button class="projectInfo hvr-grow-shadow">RPG Game</Button>
-            </div>
+        <div class="jumbotron jumboStyle">
+            <h1 id="aboutMe">Portfolio</h1>
+            <hr class="hrStyle">
 
-            <div class="individualProject">
-                <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
-                <button class="projectInfo hvr-grow-shadow">Trivia Game</Button>
-            </div>
+            <!--start of project-->
+            <div class="projectContainer">
+                <div class="individualProject">
+                    <img src="http://via.placeholder.com/227x172" class="portfolioImg">
+                    <button class="projectInfo hvr-grow-shadow">Hangman</Button>
+                </div>
 
-            <div class="individualProject">
-                <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
-                <button class="projectInfo hvr-grow-shadow">Rutgers Info Widget</Button>
-            </div>
+                <div class="individualProject">
+                    <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
+                    <button class="projectInfo hvr-grow-shadow">RPG Game</Button>
+                </div>
 
-            <div class="individualProject">
-                <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
-                <button class="projectInfo hvr-grow-shadow">Rock Paper Scissors</Button>
+                <div class="individualProject">
+                    <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
+                    <button class="projectInfo hvr-grow-shadow">Trivia Game</Button>
+                </div>
+
+                <div class="individualProject">
+                    <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
+                    <button class="projectInfo hvr-grow-shadow">Rutgers Info Widget</Button>
+                </div>
+
+                <div class="individualProject">
+                    <img src="http://via.placeholder.com/227x172" class="portfolioImg imgTwo">
+                    <button class="projectInfo hvr-grow-shadow">Rock Paper Scissors</Button>
+                </div>
             </div>
         </div>
     </div>
 
-        <footer class="footer">
-            <div class="tealBar">
-            </div>
-            <p class="footerText">Copyright &copy;</p>
-        </footer>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <p class=copyRight>Copyright &copy;</p>
+        </div>
+    </footer>
 </body>
 
 </html>
