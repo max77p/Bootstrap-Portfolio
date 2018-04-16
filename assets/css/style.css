@@ -4,9 +4,15 @@ body{
     background-image:url('../images/dust_scratches.png');
     margin-bottom:60px;
 }
+
+
 html{
     position:relative;
     min-height:100%;
+    
+}
+a:focus:active{
+    outline:none;
 }
 
 
@@ -30,6 +36,7 @@ margin:0 auto;
     background-color:#ffffff;
     border-bottom:2px solid #cccccc;
     max-width:100%;
+    padding:0;
 }
 
 .nameBar{
@@ -37,7 +44,7 @@ margin:0 auto;
     justify-content: center;
     align-items: center;
     background-color:#4aaaa5;
-    width:190px;
+    width:20em;
     height:100%;
     padding:0px 20px 0px 20px;
 
@@ -45,9 +52,7 @@ margin:0 auto;
 }
 
 .sectionBar{
-    display:flex;
-    align-self:center;
-    
+    flex-direction:row;
 }
 
 .mybtn,.mybtn1{
@@ -57,26 +62,31 @@ margin:0 auto;
     color: #777777;
     background-color:white;
     border-radius:0;
+    line-height:0.5em;
+    padding:0;
 }
 
 .mybtn:hover, .mybtn1:hover{
     background-color:white;
-    color:#777777;
+    color: #777777;;
+    border-color:#ADADAF;
 }
-.mybtn{
+.mybtn,.mybtn1{
     border-right:1px solid;
     padding-right:13px;
     padding-left:13px;
+ border-color:#ADADAF;
 }
 
 .mybtn1{
-    padding-right:13px;
-    padding-left:13px;
+    border-right:none;
+    padding-right:0;
 }
 /* Underline From Center */
 .hvr-underline-from-center {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);  
+
   }
 .hvr-underline-from-center:before {
     content: "";
@@ -84,7 +94,7 @@ margin:0 auto;
     z-index: -1;
     left: 51%;
     right: 51%;
-    bottom: 0;
+    margin-top:10px;
     background: #4aaaa5;
     height: 4px;
     -webkit-transition-property: left, right;
@@ -97,7 +107,10 @@ margin:0 auto;
   .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
+    
   }
+
+
 
 .contentContainer{
     padding:0;
@@ -131,7 +144,6 @@ margin:0 auto;
 }
 
   .profilePhoto{
-    float:left;
     margin:.3125em 1.5em 1em 0;
 }
 
@@ -188,8 +200,10 @@ textarea{
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
    outline: none;
     background-color:#4aaaa5;
-   
     transform: scale(1.1);
+  }
+  .submitButton:focus:active{
+      background-color:transparent !important;
   }
 
 .footer {
