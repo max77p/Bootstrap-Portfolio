@@ -24,20 +24,20 @@ a:focus:active{
 }
 
 .navbarstyle{
-padding:0;
-justify-content: space-between;
-font-family:Georgia, 'Times New Roman', Times, serif;
-height:70px;
-max-width:960px;
-margin:0 auto;
-}
-
-.mainnavDiv{
-    background-color:#ffffff;
+    justify-content: space-between;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border-bottom:2px solid #cccccc;
-    max-width:100%;
+    margin:0 auto;
+    background-color:#ffffff;
     padding:0;
-}
+    }
+
+    .mainnavDiv{
+        max-width:960px;
+        height:60px;
+            padding-left:0px;
+            padding-right:0px;
+        }
 
 .nameBar{
     display:flex;
@@ -70,6 +70,7 @@ margin:0 auto;
     background-color:white;
     color: #777777;;
     border-color:#ADADAF;
+    text-decoration:none !important;
 }
 .mybtn,.mybtn1{
     border-right:1px solid;
@@ -84,17 +85,21 @@ margin:0 auto;
 }
 /* Underline From Center */
 .hvr-underline-from-center {
+    display: inline-block;
+    /*vertical-align: text-bottom;*/
     -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);  
-
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    /*overflow: hidden;*/
   }
-.hvr-underline-from-center:before {
+  .hvr-underline-from-center:before {
     content: "";
     position: absolute;
     z-index: -1;
     left: 51%;
     right: 51%;
-    margin-top:10px;
+    bottom: -5px;
     background: #4aaaa5;
     height: 4px;
     -webkit-transition-property: left, right;
@@ -107,9 +112,8 @@ margin:0 auto;
   .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
-    
+  
   }
-
 
 
 .contentContainer{
@@ -120,15 +124,15 @@ margin:0 auto;
 
 }
 
-  .jumboStyle{
-      background-color:#ffffff;
-      max-width:960px;
-      margin: 0 auto;
-      margin-top:1em;
-      padding-top:2em;
-      padding-bottom:1em;
+.jumboStyle,.jumboProj{
+    background-color:#ffffff;
+    max-width:960px;
+    margin: 0 auto;
+    margin-top:1em;
+    padding-top:2em;
+    padding-bottom:1em;
 
-  }
+}
 
   #aboutMe {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -221,5 +225,6 @@ textarea{
 
 .copyRight{
     margin:0;
+    color:#ffffff;
 }
 
